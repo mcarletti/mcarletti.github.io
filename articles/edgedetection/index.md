@@ -23,7 +23,8 @@ Source: Wikipedia
 
 ---
 
- ![image](../../../shared/images/lena_color_512.tif) ![edges](edges.png)
+ <img src="https://github.com/mcarletti/mcarletti.github.io/blob/master/shared/images/lena_color_512.tif" alt="image" width="256"/>
+ <img src="edges.png" alt="edges" width="256"/>
 
 
 ### Python
@@ -34,7 +35,7 @@ import cv2
 if __name__ == '__main__':
 
 	# load image
-	filename = '../../../shared/images/lena_color_512.tif'
+	filename = 'lena_color_512.tif'
 	image_orig = cv2.imread(filename)
 	if image_orig is None:
 		print('Cannot find or load image:', filename)
@@ -68,7 +69,7 @@ if __name__ == '__main__':
 int main(void)
 {
 	// load image
-	std::string filename = "../../../shared/images/lena_color_512.tif";
+	std::string filename = "lena_color_512.tif";
 	cv::Mat image_orig = cv::imread(filename);
 	if (image_orig.empty())
 	{
