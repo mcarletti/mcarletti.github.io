@@ -4,8 +4,7 @@ Edge detection includes a variety of mathematical methods that aim at identifyin
 
 The purpose of detecting sharp changes in image brightness is to capture important events and changes in properties of the world.
 
-There are many methods for edge detection. This article treats the *Canny edge detector*.
-
+There are many methods for edge detection. This article treats the *Canny edge detector* and shows how to use the OpenCV implementation both in Python and C++.
 
 ## Canny edge detector
 
@@ -20,3 +19,85 @@ The Process of Canny edge detection algorithm can be broken down to 5 different 
 1. Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges.
 
 Source: Wikipedia
+
+
+---
+---
+
+
+### Python
+
+```python
+import cv2
+
+if __name__ == '__main__':
+
+	# load image
+	filename = '../../../shared/images/lena_color_512.tif'
+	image_orig = cv2.imread(filename)
+	if image_orig is None:
+		print('Cannot find or load image:', filename)
+		quit(-1)
+
+	image = image_orig.copy()
+
+	# convert image to grayscale
+	if len(image.shape) > 2 and image.shape[-1] >= 3:
+		image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+
+	# apply canny edge detector
+	edges = cv2.Canny(image, 92, 128)
+
+	# visualize image
+	cv2.imshow('image', image_orig)
+	cv2.imshow('edges', edges)
+	cv2.waitKey(0)
+
+	cv2.destroyAllWindows()
+```
+
+### C++
+
+```cpp
+#include <string>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>
+#include <cassert>
+
+int main(void)
+{
+	// load image
+	std::string filename = "../../../shared/images/lena_color_512.tif";
+	cv::Mat image_orig = cv::imread(filename);
+	if (image_orig.empty())
+	{
+		std::cout << "Cannot find or load image: " << filename << std::endl;
+		return -1;
+	}
+
+	cv::Mat image = image_orig.clone();
+
+	// convert image to grayscale
+	if (image.channels() > 1)
+		cv::cvtColor(image_orig, image, cv::COLOR_RGB2GRAY);
+
+	// apply canny edge detector
+	cv::Mat edges;
+	cv::Canny(image, edges, 92, 128);
+
+	// visualize image
+	cv::imshow("image", image_orig);
+	cv::imshow("edges", edges);
+	cv::waitKey(0);
+
+	cv::destroyAllWindows();
+
+	return 0;
+}
+```
+
+To compile, use the following command:
+
+```
+g++ edge.cpp -o edge `pkg-config --cflags --libs opencv`
+```

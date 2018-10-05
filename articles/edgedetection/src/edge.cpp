@@ -19,7 +19,8 @@ int main(void)
 	cv::Mat image = image_orig.clone();
 
 	// convert image to grayscale
-	cv::cvtColor(image_orig, image, cv::COLOR_RGB2GRAY);
+	if (image.channels() > 1)
+		cv::cvtColor(image_orig, image, cv::COLOR_RGB2GRAY);
 
 	// apply canny edge detector
 	cv::Mat edges;
