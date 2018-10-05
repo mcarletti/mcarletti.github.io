@@ -8,7 +8,7 @@
 int main(void)
 {
 	// load image
-	std::string filename = "../../../shared/images/lena_color_512.tif";
+	std::string filename = "lena_color_512.png";
 	cv::Mat image_orig = cv::imread(filename);
 	if (image_orig.empty())
 	{
@@ -32,6 +32,9 @@ int main(void)
 	cv::waitKey(0);
 
 	cv::destroyAllWindows();
+
+    // save image
+    cv::imwrite("edges.png", edges);
 
 	return 0;
 }

@@ -3,7 +3,7 @@ import cv2
 if __name__ == '__main__':
 
 	# load image
-	filename = '../../../shared/images/lena_color_512.tif'
+	filename = 'lena_color_512.png'
 	image_orig = cv2.imread(filename)
 	if image_orig is None:
 		print('Cannot find or load image:', filename)
@@ -24,3 +24,6 @@ if __name__ == '__main__':
 	cv2.waitKey(0)
 
 	cv2.destroyAllWindows()
+
+	# save image
+	cv2.imwrite('edges.png', edges)

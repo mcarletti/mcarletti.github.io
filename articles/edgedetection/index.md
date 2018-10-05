@@ -21,10 +21,11 @@ The Process of Canny edge detection algorithm can be broken down to 5 different 
 Source: Wikipedia
 
 
----
+# Code
 
- <img src="https://github.com/mcarletti/mcarletti.github.io/blob/master/shared/images/lena_color_512.tif" alt="image" width="256"/>
- <img src="edges.png" alt="edges" width="256"/>
+<center>
+<img src="src/lena_color_512.png" alt="image" width="300"/> <img src="src/edges.png" alt="edges" width="300"/>
+</center>
 
 
 ### Python
@@ -56,6 +57,9 @@ if __name__ == '__main__':
 	cv2.waitKey(0)
 
 	cv2.destroyAllWindows()
+
+    # save image
+    cv2.imwrite('edges.png', edges)
 ```
 
 ### C++
@@ -69,7 +73,7 @@ if __name__ == '__main__':
 int main(void)
 {
 	// load image
-	std::string filename = "lena_color_512.tif";
+	std::string filename = "lena_color_512.png";
 	cv::Mat image_orig = cv::imread(filename);
 	if (image_orig.empty())
 	{
@@ -93,6 +97,9 @@ int main(void)
 	cv::waitKey(0);
 
 	cv::destroyAllWindows();
+
+    // save image
+    cv::imwrite("edges.png", edges);
 
 	return 0;
 }
