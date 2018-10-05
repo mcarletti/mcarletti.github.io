@@ -22,7 +22,8 @@ Source: Wikipedia
 
 
 ---
----
+
+ ![image](../../../shared/images/lena_color_512.tif) ![edges](edges.png)
 
 
 ### Python
