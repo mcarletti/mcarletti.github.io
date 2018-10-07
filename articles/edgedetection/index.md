@@ -1,6 +1,6 @@
 [BACK](https://mcarletti.github.io/)
 
-<p align="right">Last update: October 7th, 2018</p>
+*Last update: October 7th, 2018*
 
 # Edge detection
 
