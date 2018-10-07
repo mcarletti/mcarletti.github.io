@@ -1,8 +1,9 @@
 [BACK](https://mcarletti.github.io/)
+*<p align="right">Last update: October 7th, 2018</p>*
 
 # Edge detection
 
-Edge detection includes a variety of mathematical methods that aim at identifying points in a digital image at which the image brightness changes sharply or, more formally, has discontinuities. The points at which image brightness changes sharply are typically organized into a set of curved line segments termed edges.
+Edge detection includes a variety of mathematical methods that aim at identifying points in a digital image at which the image brightness changes sharply or, more formally, has discontinuities. The points at which image brightness changes sharply are typically organized into a set of curved line segments termed *edges*.
 
 The purpose of detecting sharp changes in image brightness is to capture important events and changes in properties of the world.
 
@@ -10,7 +11,7 @@ There are many methods for edge detection. This article treats the *Canny edge d
 
 ## Canny edge detector
 
-The Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986. Canny also produced a computational theory of edge detection explaining why the technique works.
+The Canny edge detector is an edge detection operator that uses a multi-stage algorithm to detect a wide range of edges in images. It was developed by John F. Canny in 1986.
 
 The Process of Canny edge detection algorithm can be broken down to 5 different steps:
 
@@ -30,6 +31,20 @@ Source: Wikipedia
 <img src="src/edges.png" alt="edges" width="300"/>
 </center>
 
+The function we need to compute the edges using Canny is:
+
+```cpp
+void cv::Canny (
+    InputArray  image,             // source image (grayscale)
+    OutputArray edges,             // output image (grayscale)
+    double      threshold1,        // first hysteresis threshold
+    double      threshold2,        // second hysteresis threshold
+    int         apertureSize = 3,  // Sobel kernel size
+    bool        L2gradient = false // enable/disable L2 regularizer
+)	
+```
+
+Note that the input image must be single channel (grayscale).
 
 ### Python
 
@@ -39,7 +54,7 @@ import cv2
 if __name__ == '__main__':
 
     # load image
-    filename = 'lena_color_512.tif'
+    filename = 'lena_color_512.png'
     image_orig = cv2.imread(filename)
     if image_orig is None:
         print('Cannot find or load image:', filename)
@@ -113,3 +128,9 @@ To compile, use the following command:
 ```
 g++ edge.cpp -o edge `pkg-config --cflags --libs opencv`
 ```
+
+## Download
+
+* [edge.py](src/edge.py)
+* [edge.cpp](src/edge.cpp)
+* [lena_color_512.png](src/lena_color_512.png)
