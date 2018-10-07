@@ -1,3 +1,4 @@
 # Computer Vision
 
-* [**Edge detection**](https://mcarletti.github.io/articles/edgedetection/)
+* [**Edge detection** (Canny filter)](https://mcarletti.github.io/articles/edgedetection/)
+* [**Line detection** (Hough transform)](https://mcarletti.github.io/articles/edgedetection/)
