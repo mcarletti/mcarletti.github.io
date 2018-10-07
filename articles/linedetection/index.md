@@ -170,10 +170,10 @@ int main(void)
 	cv::destroyAllWindows();
 
     // save image
-	cv::imwrite("lines.png", image);
+    cv::imwrite("lines.png", image);
     cv::imwrite("edges.png", edges);
-
-	return 0;
+    
+    return 0;
 }
 ```
 

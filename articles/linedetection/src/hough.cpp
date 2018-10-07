@@ -60,6 +60,6 @@ int main(void)
     // save image
 	cv::imwrite("lines.png", image);
     cv::imwrite("edges.png", edges);
-
+	
 	return 0;
 }
