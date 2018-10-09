@@ -11,7 +11,7 @@ You can write your command in the command line of the MATLAB interface right aft
 
 ### Let's start
 
-Close every graphics context and windows, clean the workspace (release memory) and clean the console:
+Close every graphics contexts and windows, clean the workspace (release memory) and clean the console:
 
 ```matlab
 >> close all;
@@ -111,7 +111,7 @@ ans =
     4 8
 ```
 
-The variable `ans` (*answer*) is a special variable used by MATLAB to store the output of an operation that is not assigned to any variable. Every time a new operation is computed without assignment, `ans` is assigned with the its results.
+The variable `ans` (answer) is a special variable used by MATLAB to store the output of an operation that is not assigned to any variable. Every time a new operation is computed but not saved into a variable, `ans` is assigned with its results.
 
 To save the transposition of the matrix `M`, that is computed by `M'` we must assign it to a new variable:
 
