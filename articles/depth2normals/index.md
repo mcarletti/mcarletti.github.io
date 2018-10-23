@@ -9,13 +9,15 @@ I was searching for an embedding in order to map a depth image (`uint16-1ch`) in
 <center>
 <img alt="depthimage" src="src/depth.png" width="300">
 <img alt="jetmapembedding" src="src/jetmapembedding.png" width="300">
-<br>
+
 <img alt="convnormals" src="src/conv_normals.png" width="300">
-<img alt="crossnormals" src="src/crossfast_normals.png" width="300">
+<img alt="crossnormals" src="src/cross_normals.png" width="300">
 </center>
 
 The key idea of these methods is to analyze the cross product of the neighborhood of a pixel.
 The last method I put in the code (*jetmap*) is actually a method to embed the depth information to a different domain, in this case the jetmap colormap.
+
+The source code is available [here](src/depth2normals.cpp) and is also reported in the following block. Instructions about compilation and execution at the end of the page.
 
 ```cpp
 #include <iostream>
@@ -114,10 +116,13 @@ int main(int argc, char* argv[])
         N.push_back(N2);
         N.push_back(N3);
 
-        Mat surface_normals;
-        merge(N, surface_normals);
+        Mat normals;
+        merge(N, normals);
 
-        imshow("convolution_based_normals", surface_normals);
+        imshow("convolution_based_normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
+        imwrite("conv_normals.png", normals);
     }
     else if (MODE == "cross")
     {
@@ -145,6 +150,9 @@ int main(int argc, char* argv[])
         }
 
         imshow("explicitly cross_product normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
+        imwrite("cross_normals.png", normals);
     }   
     else if (MODE == "crossfast")
     {
@@ -168,6 +176,9 @@ int main(int argc, char* argv[])
         }
 
         imshow("fast cross_product normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
+        imwrite("crossfast_normals.png", normals);
     }
     else if (MODE == "jetmap")
     {
@@ -176,14 +187,15 @@ int main(int argc, char* argv[])
         // https://ieeexplore.ieee.org/abstract/document/7353446
 
         depth.convertTo(depth, CV_8UC1);
-        Mat normals(depth.size(), CV_8UC3);
+        Mat embedding(depth.size(), CV_8UC3);
 
-        applyColorMap(depth, normals, COLORMAP_JET);
+        applyColorMap(depth, embedding, COLORMAP_JET);
 
-        imshow("depth information to jet colormap", normals);
+        imshow("depth information to jet colormap", embedding);
+        imwrite("jetmapembedding.png", embedding);
     } 
 
-    cv::waitKey(0);
+    waitKey(0);
 
     return 0;
 }
@@ -191,8 +203,7 @@ int main(int argc, char* argv[])
 
 Compile:
 ```
-g++ depth2normals.cpp -o depth2normals `pkg-config --cflags --libs 
-opencv`
+g++ depth2normals.cpp -o depth2normals `pkg-config --cflags --libs opencv`
 ```
 
 Example:

@@ -103,11 +103,13 @@ int main(int argc, char* argv[])
         N.push_back(N2);
         N.push_back(N3);
 
-        Mat surface_normals;
-        merge(N, surface_normals);
+        Mat normals;
+        merge(N, normals);
 
-        imshow("convolution_based_normals", surface_normals);
-        imwrite("conv_normals.png", surface_normals);
+        imshow("convolution_based_normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
+        imwrite("conv_normals.png", normals);
     }
     else if (MODE == "cross")
     {
@@ -135,6 +137,8 @@ int main(int argc, char* argv[])
         }
 
         imshow("explicitly cross_product normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
         imwrite("cross_normals.png", normals);
     }   
     else if (MODE == "crossfast")
@@ -159,6 +163,8 @@ int main(int argc, char* argv[])
         }
 
         imshow("fast cross_product normals", normals);
+        normals *= 255;
+        normals.convertTo(normals, CV_8UC3);
         imwrite("crossfast_normals.png", normals);
     }
     else if (MODE == "jetmap")
