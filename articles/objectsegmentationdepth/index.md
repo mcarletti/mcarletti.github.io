@@ -2,10 +2,21 @@
 
 *Last update: November 18th, 2018*
 
-# Depth segmentation
+# Object segmentation in grayscale images
 
-TODO
+In computer vision, **image segmentation** is the process of partitioning a digital image into multiple segments (sets of pixels, also known as super-pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. More precisely, image segmentation is the process of assigning a label to every pixel in an image such that pixels with the same label share certain characteristics.
 
+In this article we segment an object starting from a depth image.
+The procedure follows the following steps:
+
+1. convert the image to a grayscale (single channel) image
+1. prepare a segmentation mask which will be updated with the segment
+1. run a region growing algorithm
+1. enjoy :)
+
+Segmentation is far to be a trivial task. Here we do not provide any specific overview on the strategies one could follow. Wikipedia gives an exhaustive [list of segmentation methods](https://en.wikipedia.org/wiki/Image_segmentation). However, if you are interested in this topic take a look to the [flood fill](https://en.wikipedia.org/wiki/Flood_fill) and [watershed](https://en.wikipedia.org/wiki/Watershed_%28image_processing%29) algorithms. Here we will use the first one.
+
+Sources: Wikipedia - Credits: https://vgg.fiit.stuba.sk/2013-07/object-segmentation/
 
 # Code
 
@@ -31,10 +42,6 @@ int V = int(height / 2);
 ```
 
 Then, the segmentation is done using the floodFill algorithm:
-
-<center>
-<img src="floodFill.gif" alt="image" width="150"/>
-</center>
 
 ```cpp
 cv::Point2i seed;
