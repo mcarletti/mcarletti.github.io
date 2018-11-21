@@ -11,6 +11,9 @@ Si è verificato un errore durante l'aggiornamento di NOMEGIOCO: Server dei cont
 
 It seems the error is a known bug on the [official bugtracker](https://bugs.winehq.org/show_bug.cgi?id=45329) of Wine.
 
+#### CLOSE ALL WINE AND STEAM PROCESSES BEFORE APPLYING THE FIX
+Otherwise the process might fail.
+
 The solution proposed by a good boy on Reddit is the following:
 
 

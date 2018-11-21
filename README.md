@@ -8,6 +8,7 @@
 
 # Ubuntu
 * [**Steam in Wine - Fix "content servers unreachable" bug**](https://mcarletti.github.io/articles/steamwineunreachableservers/)
+* [**Play Age of Empires 2 HD on Steam**](https://mcarletti.github.io/articles/playaoe2onlinux)
 
 # Misc
 
