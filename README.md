@@ -7,8 +7,9 @@
 * [**Object segmentation from grayscale** (Flood Fill)](https://mcarletti.github.io/articles/objectsegmentationdepth/)
 
 # Ubuntu
-* [**Steam in Wine - Fix "content servers unreachable" bug**](https://mcarletti.github.io/articles/steamwineunreachableservers/)
+* [**Steam in Wine: "content servers unreachable" bugfix**](https://mcarletti.github.io/articles/steamwineunreachableservers/)
 * [**Play Age of Empires 2 HD on Steam**](https://mcarletti.github.io/articles/playaoe2onlinux)
+* [**Boot message: "error: no symbol table" bugfix**](https://mcarletti.github.io/articles/ubuntubootnosymboltable)
 
 # Misc
 
