@@ -42,12 +42,8 @@ Follow these instructions:
 pylint --generate-rcfile > .pylintrc
 ```
 2. Update the TYPECHECK section to add the desired modules which function members list needs to be generated. For example, add `numpy.*` to generate the numpy member names.
-```sh
+```bash
 [TYPECHECK]
-
-# List of members which are set dynamically and missed by pylint inference
-# system, and so shouldn't trigger E1101 when accessed. Python regular
-# expressions are accepted.
 generated-members=numpy.*,torch.*,cv2.*
 ```
 3. Restart the IDE.
