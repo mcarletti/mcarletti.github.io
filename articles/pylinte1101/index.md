@@ -25,7 +25,7 @@ Follow these instructions:
 1. Click on the `Edit settings.json` link to open the corresponding file.
 1. Add the following snippet to the user settings (right column):
 
-```
+```json
 "python.linting.pylintArgs": [
     "--errors-only",
     "--generated-members=numpy.*,torch.*,cv2.*"
@@ -42,7 +42,7 @@ Follow these instructions:
 pylint --generate-rcfile > .pylintrc
 ```
 2. Update the TYPECHECK section to add the desired modules which function members list needs to be generated. For example, add `numpy.*` to generate the numpy member names.
-```bash
+```sh
 [TYPECHECK]
 
 # List of members which are set dynamically and missed by pylint inference
