@@ -24,14 +24,12 @@ Follow these instructions:
 1. Type `python.linting.banditArgs` in the search bar.
 1. Click on the `Edit settings.json` link to open the corresponding file.
 1. Add the following snippet to the user settings (right column):
-
 ```json
 "python.linting.pylintArgs": [
     "--errors-only",
     "--generated-members=numpy.*,torch.*,cv2.*"
 ]
 ```
-
 5. Restart the IDE.
 
 
