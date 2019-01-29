@@ -1,6 +1,6 @@
 [BACK](https://mcarletti.github.io/)
 
-*Last update: Jenuary 29th, 2019*
+*Last update: January 29th, 2019*
 
 # **Pylint E1101 Module** '*module_name*' **has no** '*member_name*' **member** (BUGFIX)
 
