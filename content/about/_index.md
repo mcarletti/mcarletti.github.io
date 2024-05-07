@@ -1,7 +1,8 @@
 Hi, this is **Marco** 👋
 I love to learn and dream big (after all, it costs zero!), and I'm always looking for new challenges and opportunities to grow.
 
-I write here to share my thoughts, ideas, and projects. Mostly related to technology and artificial intelligence.
+I write here to share my thoughts, ideas, and projects.  
+Mostly related to technology and artificial intelligence.
 
 <center style="font-size: 1.5rem">📖 📸 🤖 ✨ 👾 🎲 🐉 ⛰️</center>
 

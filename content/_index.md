@@ -9,4 +9,7 @@ Professionally, I have a PhD in Computer Science with a focus on Machine Learnin
 
 What else? Self-tought guitar player, Dungeon Master, huge LOTR fan and board games enthusiast. Not very sporty, but definitely loving hiking and alpinism.
 
-❤️ **Github**: https://github.com/mcarletti
+❤️ [**Github**](https://github.com/mcarletti)  
+💼 [**LinkedIn**](https://www.linkedin.com/in/marcocarletti/)  
+🥞 [**StackOverflow**](https://stackoverflow.com/users/1358091/marco-carletti)  
+🎓 [**Scholar**](https://scholar.google.com/citations?user=EH0wd2gAAAAJ&hl=it&oi=ao)  
