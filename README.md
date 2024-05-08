@@ -10,10 +10,17 @@ I know nothing about Go, but I found Hugo easier than the alternatives.
 
 ### Installation
 
+First of all, download this repository and all submodules.
+
+```bash
+git clone git@github.com:mcarletti/mcarletti.github.io.git
+git submodule update --init --recursive
+```
+
 To build a local website, you need to install Hugo. Unfortunately, `apt` package manager brings an old version of the library, so I suggest you to install it via `snap`. At the time of writing, the latest version is 0.125.6.
 
 ```bash
-sudo snap install hugo
+snap install hugo
 ```
 
 To build the website and get a local server, you simply need to run the following command from the root folder of the project.
