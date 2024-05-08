@@ -1,7 +1,7 @@
 # Hi! 👋
 
 <!-- <img class="avatar" src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=ShirtCrewNeck&clotheColor=Red&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"/> -->
-<img class="avatar" src="assets/avatar_baldo22.jpg"/>
+<img class="avatar" src="/assets/avatar_baldo22.jpg"/>
 
 I'm a tireless learner, passionate developer, happy husband, and proud father of two.
 
