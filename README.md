@@ -36,7 +36,7 @@ Let the buider action do the rest and enjoy your new website in a few seconds ðŸ
 ## Notes
 
 I still don't understand why images are not displayed if they are located in the `assets` folder.  
-Maybe it's the theme I'm using, but I don't care too much (hey, I simply want my website publihed).
+Maybe it's the theme I'm using, but I don't care too much (hey, I simply want my website published).  
 I found [this](https://discourse.gohugo.io/t/cannot-get-images-to-appear-in-content-and-main-page/14017) workaround: I put the images in the `static` folder and I reference them with the `/` prefix.
 
 ## Licence
