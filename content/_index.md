@@ -7,7 +7,7 @@ I'm a tireless learner, passionate developer, happy husband, and proud father of
 
 Professionally, I have a PhD in Computer Science with a focus on Machine Learning, Computer Vision and AI research. Yeah, neural networks stuff applied to vision.
 
-What else? Self-tought guitar player, Dungeon Master, huge LOTR fan and board games enthusiast. Not very sporty, but definitely loving hiking and alpinism.
+What else? Self-taught guitar player, Dungeon Master, huge LOTR fan and board games enthusiast. Not very sporty, but definitely loving hiking and alpinism.
 
 ❤️ [**Github**](https://github.com/mcarletti)  
 💼 [**LinkedIn**](https://www.linkedin.com/in/marcocarletti/)  
