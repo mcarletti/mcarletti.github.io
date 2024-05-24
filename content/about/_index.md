@@ -8,7 +8,7 @@ Mostly related to technology and artificial intelligence.
 
 # 🎓 Education and working experience
 
-I work at [EVS Embedded Vision Systems, Srl](https://www.embeddedvisionsystems.it/) (Verona, Italy) as Senior R&D Software Engineer since 2019, collaborating with prof. [Vittorio Murino](https://www.vittoriomurino.com/).
+I work at [EVS Embedded Vision Systems, Srl](https://www.embeddedvisionsystems.it/) (Verona, Italy) as Senior Research Scientist since 2019, collaborating with prof. [Vittorio Murino](https://www.vittoriomurino.com/).
 
 I've received my **PhD in Computer Science** in 2020 within the Vision, Image Processing & Sound (VIPS) Lab at the University of Verona, Italy, under the supervision of prof. [Marco Cristani](http://profs.sci.univr.it/~cristanm/).
 
@@ -18,5 +18,5 @@ From July 2018 to March 2019, I collaborated with the Istituto Italiano di Tecno
 
 My background also includes **Computer Vision** and graphics applied to surgical robotics, augmented reality and game development.
 
-📜 [Resumé]()  
-📜 [Curriculum Vitae]()
+<!-- 📜 [Resumé]()  
+📜 [Curriculum Vitae]() -->
