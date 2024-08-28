@@ -31,6 +31,30 @@ hugo server -D
 
 The `-D` is optional but it allows you to see draft content.
 
+### Add new content
+
+You can manually create a file in the right folder, however you would need to create the header accordingly. That's pretty boring.
+
+Hugo provides an utility which refers to `archetypes/default.md` template file. The use of the template is automatic, so you can simply run the following command.
+
+```bash
+hugo new content posts/new-awesome-article.md
+```
+
+The header will be something like the following, `---` included.
+
+```yaml
+---
+author: "Marco Carletti"
+title: "Hello World"
+date: 2024-05-07T12:20:23+02:00
+draft: true
+tags: []
+---
+```
+
+Once finished adding your content, don't forget to set `draft` to false and add the proper tags as a list of strings.
+
 ### Deployment
 
 You need to create an Action in the action group and... Nevermind.  
