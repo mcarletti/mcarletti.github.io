@@ -70,12 +70,13 @@ open-webui serve
 
 ## ComfyUI
 
-Why don't you create a local LLM with image creation capabilities?  
-[ComfyUI](https://github.com/comfyanonymous/ComfyUI) is what you need.
+Why don't you update your local clone of ChatGPT with image creation capabilities?  
+[ComfyUI](https://github.com/comfyanonymous/ComfyUI) is what you need. I'm not going to explain how it works, however it's enough to know ComfyUI allows to create a nodes workflow (like in Blender or Unreal Engine, if you are familiar with those tools) to load pre-trained models or checkpoints, like SDXL or Flux.1, control the latent space and many other useful operations.  
+Simply pass a text prompt to the text encoder (usually, it is a CLIP-based node), click the play button and wait for your image to be generated.
 
 <img src="https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/comfyui_screenshot.png" />
 
-This time, you are expected to play with `git`.
+To install the image generator, we need to install a repository and update our conda environment.
 
 1. Clone the repository from Github.
 ```bash
@@ -95,6 +96,23 @@ python main.py
 Add `--listen` to expose the server outside the localhost, binding it to [http://0.0.0.0:8188](http://0.0.0.0:8188).
 
 To download new models, see [this](https://stable-diffusion-art.com/models/#Popular_Stable_Diffusion_Models) link.
+
+### Link ComfyUI in Open-WebUI
+
+ComfyUI is a standalone application, however its usage in Open-WebUI is very simple.  
+Just open the `Admin Panel` > `Settings` > `Images`, and play with the settings.
+
+<img src="/assets/admin_settings.png" />
+
+The minimum required steps are the following:
+
+1. Set **Image Generation Engine** to ComfyUI
+1. Set **ComfyUI Base URL** with `http://localhost:8188/` (update this according to your ComfyUI settings)
+1. Select the desired checkpoint from **Set Default Model** drop-down list.
+
+Don't forget to save to apply! Now, every time your LLM generates a response, you can click a small icon of an image right below the generated text. It will take a while, and woilà! A brand new generated image is now shown in the chat.
+
+At [this link](https://docs.openwebui.com/tutorial/images/#setting-up-open-webui-with-comfyui), you can find more information on how to set up Open-WebUI + ComfyUI.
 
 ## Update
 
