@@ -106,13 +106,17 @@ Just open the `Admin Panel` > `Settings` > `Images`, and play with the settings.
 
 The minimum required steps are the following:
 
-1. Set **Image Generation Engine** to ComfyUI
-1. Set **ComfyUI Base URL** with `http://localhost:8188/` (update this according to your ComfyUI settings)
+1. Set **Image Generation Engine** to ComfyUI.
+1. Set **ComfyUI Base URL** with `http://localhost:8188/` (update this according to your ComfyUI settings).
+1. Enable **Dev Mode** in ComfyUI settings.
+1. Setup your preferred worflow in ComfyUI and **Export (API)** from the *Workflow* menu as a json file.
+1. Return to Open-WebUI settings and import the workflow json file.
+1. After importing, map the **ComfyUI Workflow Nodes** according to the imported node IDs.
 1. Select the desired checkpoint from **Set Default Model** drop-down list.
 
 Don't forget to save to apply! Now, every time your LLM generates a response, you can click a small icon of an image right below the generated text. It will take a while, and woilà! A brand new generated image is now shown in the chat.
 
-At [this link](https://docs.openwebui.com/tutorial/images/#setting-up-open-webui-with-comfyui), you can find more information on how to set up Open-WebUI + ComfyUI.
+At [this link](https://open-webui.com/comfyui/), you can find more information on how to set up Open-WebUI + ComfyUI.
 
 ## Update
 
