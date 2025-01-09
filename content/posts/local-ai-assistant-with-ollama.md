@@ -74,7 +74,7 @@ Why don't you update your local clone of ChatGPT with image creation capabilitie
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) is what you need. I'm not going to explain how it works, however it's enough to know ComfyUI allows to create a nodes workflow (like in Blender or Unreal Engine, if you are familiar with those tools) to load pre-trained models or checkpoints, like SDXL or Flux.1, control the latent space and many other useful operations.  
 Simply pass a text prompt to the text encoder (usually, it is a CLIP-based node), click the play button and wait for your image to be generated.
 
-<img src="https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/comfyui_screenshot.png" />
+<img src="https://private-user-images.githubusercontent.com/20929282/387336446-7ccaf2c1-9b72-41ae-9a89-5688c94b7abe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY0MTMzNTIsIm5iZiI6MTczNjQxMzA1MiwicGF0aCI6Ii8yMDkyOTI4Mi8zODczMzY0NDYtN2NjYWYyYzEtOWI3Mi00MWFlLTlhODktNTY4OGM5NGI3YWJlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTA5VDA4NTczMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5NDQ5ODJiNmIzMjU0MzlhMTIzNTBlZWMwYjUxNjQyOTliZjZlZTQwYTg3MzdkYjIxYTVhNTVlMjYwZGJmOTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Z4yb7Zdf-OZ3w7a0Jxk2Vo_Ed6O73uF942lR4WiaQIw" />
 
 To install the image generator, we need to install a repository and update our conda environment.
 
