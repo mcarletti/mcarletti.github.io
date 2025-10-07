@@ -6,7 +6,7 @@ Mostly related to technology and artificial intelligence.
 
 <center style="font-size: 1.5rem">📖 📸 🤖 ✨ 👾 🎲 🐉 ⛰️</center>
 
-# 🎓 Education and working experience
+# 🎓 Short Bio
 
 I work at [EVS Embedded Vision Systems, Srl](https://www.embeddedvisionsystems.it/) (Verona, Italy) as Senior Research Scientist since 2019, collaborating with prof. [Vittorio Murino](https://www.vittoriomurino.com/).
 
@@ -20,6 +20,8 @@ My background also includes **Computer Vision** and graphics applied to surgical
 
 # 📜 Publications
 
+* [*Multimodal Distillation for Video-based Sleep Behavior Analysis*]()  
+2025, ICIAP
 * [*Saliency-based approaches for multidimensional explainability of deep networks*](https://iris.univr.it/handle/11562/1016496)  
 2020, PhD thesis
 * [*Active 3D Classification of Multiple Objects in Cluttered Scenes*](https://openaccess.thecvf.com/content_ICCVW_2019/papers/ACVR/Wang_Active_3D_Classification_of_Multiple_Objects_in_Cluttered_Scenes_ICCVW_2019_paper.pdf)  
@@ -38,7 +40,3 @@ My background also includes **Computer Vision** and graphics applied to surgical
 2016, VISAPP
 * [*Robust 3D Pose Estimation of a Laparoscopic Instrument with three Landmarks*](https://diglib.eg.org/server/api/core/bitstreams/9a20965e-f2c5-4d8d-a42a-dec098389cb1/content)  
 2015, STAG (Eurographics Italian Chapter)
-
-
-<!-- 📜 [Resumé]()  
-📜 [Curriculum Vitae]() -->
