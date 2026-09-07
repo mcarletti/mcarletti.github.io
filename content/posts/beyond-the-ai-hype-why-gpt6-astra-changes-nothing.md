@@ -2,9 +2,11 @@
 author: "Marco Carletti"
 title: "Beyond the Hype: why GPT-6 Astra changes nothing"
 date: 2026-09-07T10:49:50+02:00
-draft: true
+draft: false
 tags: ["artificial intelligence", "llm", "gpt"]
 ---
+
+<center><img src="/assets/comet.jpg" style="padding: 2rem; height: 360px;"/></center>
 
 OpenAI recently released the GPT-6 Astra model. My controversial opinion is that I see no difference compared to the past. Let me explain.
 
